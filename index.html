@@ -1,69 +1,23 @@
-<head><script defer src="bundle.js"></script></head>Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module not found: Error: Can't resolve '/home/thanush/OdinProjects/RestaurantSample/dist/index.html' in '/  home/thanush/OdinProjects/RestaurantSample'
-  ModuleNotFoundError: Module not found: Error: Can't resolve '/home/thanush/OdinProjects/RestaurantSample/d  ist/index.html' in '/home/thanush/OdinProjects/RestaurantSample'
-      at /home/thanush/OdinProjects/RestaurantSample/node_modules/webpack/lib/Compilation.js:2230:28
-      at /home/thanush/OdinProjects/RestaurantSample/node_modules/webpack/lib/NormalModuleFactory.js:933:13
-      at eval (eval at create (/home/thanush/OdinProjects/RestaurantSample/node_modules/tapable/lib/HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at /home/thanush/OdinProjects/RestaurantSample/node_modules/webpack/lib/NormalModuleFactory.js:347:22
-      at eval (eval at create (/home/thanush/OdinProjects/RestaurantSample/node_modules/tapable/lib/HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at /home/thanush/OdinProjects/RestaurantSample/node_modules/webpack/lib/NormalModuleFactory.js:530:22
-      at /home/thanush/OdinProjects/RestaurantSample/node_modules/webpack/lib/NormalModuleFactory.js:163:10
-      at /home/thanush/OdinProjects/RestaurantSample/node_modules/webpack/lib/NormalModuleFactory.js:794:25
-      at /home/thanush/OdinProjects/RestaurantSample/node_modules/webpack/lib/NormalModuleFactory.js:1018:8
-      at /home/thanush/OdinProjects/RestaurantSample/node_modules/webpack/lib/NormalModuleFactory.js:1147:5
-  
-  - Compilation.js:2230 
-    [RestaurantSample]/[webpack]/lib/Compilation.js:2230:28
-  
-  - NormalModuleFactory.js:933 
-    [RestaurantSample]/[webpack]/lib/NormalModuleFactory.js:933:13
-  
-  
-  - NormalModuleFactory.js:347 
-    [RestaurantSample]/[webpack]/lib/NormalModuleFactory.js:347:22
-  
-  
-  - NormalModuleFactory.js:530 
-    [RestaurantSample]/[webpack]/lib/NormalModuleFactory.js:530:22
-  
-  - NormalModuleFactory.js:163 
-    [RestaurantSample]/[webpack]/lib/NormalModuleFactory.js:163:10
-  
-  - NormalModuleFactory.js:794 
-    [RestaurantSample]/[webpack]/lib/NormalModuleFactory.js:794:25
-  
-  - NormalModuleFactory.js:1018 
-    [RestaurantSample]/[webpack]/lib/NormalModuleFactory.js:1018:8
-  
-  - NormalModuleFactory.js:1147 
-    [RestaurantSample]/[webpack]/lib/NormalModuleFactory.js:1147:5
-  
-  - child-compiler.js:211 
-    [RestaurantSample]/[html-webpack-plugin]/lib/child-compiler.js:211:18
-  
-  - Compiler.js:625 finalCallback
-    [RestaurantSample]/[webpack]/lib/Compiler.js:625:5
-  
-  - Compiler.js:661 
-    [RestaurantSample]/[webpack]/lib/Compiler.js:661:11
-  
-  - Compiler.js:1347 
-    [RestaurantSample]/[webpack]/lib/Compiler.js:1347:17
-  
-  
-  - Hook.js:20 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
-    [RestaurantSample]/[tapable]/lib/Hook.js:20:14
-  
-  - Compiler.js:1343 
-    [RestaurantSample]/[webpack]/lib/Compiler.js:1343:33
-  
-  - Compilation.js:3061 finalCallback
-    [RestaurantSample]/[webpack]/lib/Compilation.js:3061:11
-  
-  - Compilation.js:3404 
-    [RestaurantSample]/[webpack]/lib/Compilation.js:3404:11
-  
-  
-</pre>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Page</title>
+    <link rel="stylesheet" href="style.css">
+
+<script defer src="bundle.js"></script></head>
+<body>
+    <header>
+        <nav class="nav">
+            <a class="navbar-brand">ABC Restaurant</a>
+            <div class="nav-items">
+            <button class="btn" id="home">Home</button>
+            <button class="btn" id="menu">Menu</button>
+            <button class="btn" id="about">About Us</button>
+            </div>
+        </nav>
+    </header>
+    <div id="content"></div>
+</body>
+</html>
