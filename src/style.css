@@ -34,6 +34,7 @@ body{
 .navbar-brand{
     font-size: x-large;
     font-weight: bold;
+    color: var(--accent-darker);
 }
 
 .img{
@@ -54,4 +55,23 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.home-heading{
+    color: var(--accent-darker);
+}
+
+table{
+    background-color: var(--body-color-darker);
+    font-size: x-large;
+    border-radius: 4%;
+}
+
+td{
+    padding: 15px;
+    width: 10vw;
+}
+
+.price{
+    text-align: right;
 }

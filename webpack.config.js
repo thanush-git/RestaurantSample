@@ -8,23 +8,31 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
+
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/template.html',
+    }),
+  ],
+
+  devServer: {
+    static: './dist',
+    open: true,
+    port: 3002,
+  },
+
   module: {
     rules: [
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset',
+      },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/template.html',
-    }),
-  ],
-  devServer: {
-    static: './dist',
-    open: true,
-    port: 3002,
-  },
+
   mode: 'development',
 };
